@@ -1,0 +1,105 @@
+%CS-113 S18 HW-3
+%Released: 16-Feb-2018
+%Deadline: 2-March-2018 7.00 pm
+%Authors: Abdullah Zafar, Waqar Saleem.
+
+
+\documentclass[addpoints]{exam}
+
+% Header and footer.
+\pagestyle{headandfoot}
+\runningheadrule
+\runningfootrule
+\runningheader{CS 113 Discrete Mathematics}{Homework II}{Spring 2018}
+\runningfooter{}{Page \thepage\ of \numpages}{}
+\firstpageheader{}{}{}
+
+\boxedpoints
+\printanswers
+\usepackage[table]{xcolor}
+\usepackage{amsfonts,graphicx,amsmath,hyperref}
+
+\title{Habib University\\CS-113 Discrete Mathematics\\Spring 2018\\HW 3}
+\author{$<your ID>$}  % replace with your ID, e.g. oy02945
+\date{Due: 19h, 2nd March, 2018}
+
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+
+
+\question
+All sets carry data, but how much information can be extracted from it? Consider a simple model on a set $A$, in which each relation encodes 1 unit of information. We define the ``Information Potential" of a set as the sum of information units (or the number of distinct relations) that can be generated from the set. In the questions that follow, you may assume all relations to be binary.
+
+\begin{parts}
+  \part Consider $A$ to be the set of $n$ distinct facts. What is the information potential of this set?
+  
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+  
+  \part Reflexive pairs of the form $(fact\;x, fact\;x)$ are considered redundant in our model. What is the information potential of the ``non-redundant" set, that is, the set without reflexive relations? 
+  
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+
+  \part Anti-symmetric relations that follow the rule $(fact\;x,fact\;y)\; \land (fact\;y,fact\;x) \rightarrow fact\;x = fact\;y$ are of special interest to our model. Such pairs, as in the aforementioned antecedent, can be used to express ordered relationships between facts. What is the combined Information Potential of anti-symmetric relations on the non-redundant set? 
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+  
+  \part There are many ways to describe a relation in natural language. For example, a relation described as $``x<y"$ over the set $\{1,2\}$ may also be described as $``x+1=y"$. Specifically, two descriptions that produce the same relation are considered ``isomorphs" of one another in our model. There may be any number of isomorphs for a given relation. Given $2^{n^2+1}$ descriptions of relations, how many isomorphs exist? (Give your answer as a range)
+  
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+
+\end{parts}
+
+\question Let $R$ be a relation from $A$ to $B$. Then the inverse of $R$, written $R^{-1}$, is a relation from $B$ to $A$ defined by $R^{-1} = \{(y,x) \in B \times A \:|\: (x,y) \in R\}$. Prove that $R$ is symmetric iff $R = R^{-1}$.
+
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+
+\question Let $R$ and $S$ be relations on a set $A$. Assuming $A$ has at least 3 elements, state whether each of the following statements is true or false, providing a brief explanation if true, or a counterexample if false:
+\begin{parts}
+\part If $R$ and $S$ are reflexive, then $R \cup S$ is reflexive.
+\part If $R$ and $S$ are anti-symmetric, then $R \circ S$ is anti-symmetric.
+\part If $R$ and $S$ are symmetric, then $R \cap S$ is symmetric.
+\part If $R$ is reflexive, then $R \cap R^{-1}$ is not empty. 
+\part If $R$ is transitive, then $R^{-1}$ is transitive.
+\end{parts}
+
+
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+  
+\question Let $R$ be a relation on $A$. Prove that the digraph representation of $R$ has a path of length $n$ from $a$ to $b$ iff $(a, b) \in R^n$.
+
+  \begin{solution}
+    % Write your solution here
+  \end{solution}
+
+\question
+    Let $R$ be a relation on a set $A$. We define
+
+    $\rho (R) = R \cup \{(a, a) | a \in A\}$ \\ 
+    $\phi (R) = R \cup R^{-1}$ \\
+    $\tau (R) = \cup \{ R^n | n = 1,2,3,...\}$
+    
+    Show that $\tau (\phi (\rho (R)))$ is an equivalence relation containing $R$.
+    
+      \begin{solution}
+    % Write your solution here
+  \end{solution}
+
+
+\end{questions}
+
+\end{document}
